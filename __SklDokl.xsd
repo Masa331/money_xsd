@@ -312,11 +312,11 @@
           <xs:documentation>Datum pro Intrastat</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="Sleva" type="castkaType" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation>Sleva celkem za doklad (pouze u dokladů s položkami) - implicitně 0  IMPORT: NE (případná sleva dokladu musí být zohledněna přímo v cenách položek), EXPORT: ANO</xs:documentation>
-        </xs:annotation>
-      </xs:element>
+      <!-- <xs:element name="Sleva" type="castkaType" minOccurs="0"> -->
+      <!--   <xs:annotation> -->
+      <!--     <xs:documentation>Sleva celkem za doklad (pouze u dokladů s položkami) - implicitně 0  IMPORT: NE (případná sleva dokladu musí být zohledněna přímo v cenách položek), EXPORT: ANO</xs:documentation> -->
+      <!--   </xs:annotation> -->
+      <!-- </xs:element> -->
       <xs:element name="iDokladID" minOccurs="0">
         <xs:annotation>
           <xs:documentation>Pouze pro interní potřebu (iDoklad)</xs:documentation>
