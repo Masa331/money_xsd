@@ -1,61 +1,61 @@
-<?xml version="1.0" encoding="windows-1250"?>
+ď»ż<?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" version="24.04.01">
-  <xs:annotation>
-    <xs:documentation>XML schéma seznamu chyb podání</xs:documentation>
-  </xs:annotation>
-  <xs:element name="Chyby">
-    <xs:complexType mixed="false">
-      <xs:sequence>
-        <xs:element name="Chyba" maxOccurs="unbounded">
-          <xs:annotation>
-            <xs:documentation>Element odpovídající jednomu objektu typu Chyba.</xs:documentation>
-          </xs:annotation>
-          <xs:complexType mixed="false">
-            <xs:sequence>
-              <xs:element name="Text" type="xs:string">
-                <xs:annotation>
-                  <xs:documentation>Textový popis chyby.</xs:documentation>
-                </xs:annotation>
-              </xs:element>
-              <xs:element name="Zasobnik" type="xs:string" minOccurs="0">
-                <xs:annotation>
-                  <xs:documentation>Pokud se jedná o výjimku, je připojen otisk zásobníku.</xs:documentation>
-                </xs:annotation>
-              </xs:element>
-            </xs:sequence>
-            <xs:attribute name="Typ" type="xs:string">
-              <xs:annotation>
-                <xs:documentation>Typ chyby: K = kritická, S = chyba struktury v datech podání­, N = propustná závažná, P = propustná, V = výjimka java, I = chyba informací.</xs:documentation>
-              </xs:annotation>
-            </xs:attribute>
-            <xs:attribute name="Radek" type="xs:string">
-              <xs:annotation>
-                <xs:documentation>Číslo řádku v souboru (pouze pokud lze), nebo index opakující se položky.</xs:documentation>
-              </xs:annotation>
-            </xs:attribute>
-            <xs:attribute name="Polozka" type="xs:string">
-              <xs:annotation>
-                <xs:documentation>Identifikace položky.</xs:documentation>
-              </xs:annotation>
-            </xs:attribute>
-            <xs:attribute name="Oddil" type="xs:string">
-              <xs:annotation>
-                <xs:documentation>Identifikace oddílu, ve kterém se položka nachází­.</xs:documentation>
-              </xs:annotation>
-            </xs:attribute>
-            <xs:attribute name="DoplInfo" type="xs:string">
-              <xs:annotation>
-                <xs:documentation>Doplňující informace, kde se položka chyba nachází.</xs:documentation>
-              </xs:annotation>
-            </xs:attribute>
-            <xs:attribute name="Zkr" type="xs:string">
-              <xs:annotation>
-                <xs:documentation>Zkratka chyby, neboli její identifikátor.</xs:documentation>
-              </xs:annotation>
-            </xs:attribute>
-          </xs:complexType>
-        </xs:element>
-      </xs:sequence>
-    </xs:complexType>
-  </xs:element>
+	<xs:annotation>
+		<xs:documentation>XML schĂ©ma seznamu chyb podĂˇnĂ­</xs:documentation>
+	</xs:annotation>
+	<xs:element name="Chyby">
+		<xs:complexType mixed="false">
+			<xs:sequence>
+				<xs:element name="Chyba" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation>Element odpovĂ­dajĂ­cĂ­ jednomu objektu typu Chyba.</xs:documentation>
+					</xs:annotation>
+					<xs:complexType mixed="false">
+						<xs:sequence>
+							<xs:element name="Text" type="xs:string">
+								<xs:annotation>
+									<xs:documentation>TextovĂ˝ popis chyby.</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="Zasobnik" type="xs:string" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>Pokud se jednĂˇ o vĂ˝jimku, je pĹ™ipojen otisk zĂˇsobnĂ­ku.</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+						</xs:sequence>
+						<xs:attribute name="Typ" type="xs:string">
+							<xs:annotation>
+								<xs:documentation>Typ chyby: K = kritickĂˇ, S = chyba struktury v datech podĂˇnĂ­Â­, N = propustnĂˇ zĂˇvaĹľnĂˇ, P = propustnĂˇ, V = vĂ˝jimka java, I = chyba informacĂ­.</xs:documentation>
+							</xs:annotation>
+						</xs:attribute>
+						<xs:attribute name="Radek" type="xs:string">
+							<xs:annotation>
+								<xs:documentation>ÄŚĂ­slo Ĺ™Ăˇdku v souboru (pouze pokud lze), nebo index opakujĂ­cĂ­ se poloĹľky.</xs:documentation>
+							</xs:annotation>
+						</xs:attribute>
+						<xs:attribute name="Polozka" type="xs:string">
+							<xs:annotation>
+								<xs:documentation>Identifikace poloĹľky.</xs:documentation>
+							</xs:annotation>
+						</xs:attribute>
+						<xs:attribute name="Oddil" type="xs:string">
+							<xs:annotation>
+								<xs:documentation>Identifikace oddĂ­lu, ve kterĂ©m se poloĹľka nachĂˇzĂ­Â­.</xs:documentation>
+							</xs:annotation>
+						</xs:attribute>
+						<xs:attribute name="DoplInfo" type="xs:string">
+							<xs:annotation>
+								<xs:documentation>DoplĹujĂ­cĂ­ informace, kde se poloĹľka chyba nachĂˇzĂ­.</xs:documentation>
+							</xs:annotation>
+						</xs:attribute>
+						<xs:attribute name="Zkr" type="xs:string">
+							<xs:annotation>
+								<xs:documentation>Zkratka chyby, neboli jejĂ­ identifikĂˇtor.</xs:documentation>
+							</xs:annotation>
+						</xs:attribute>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
 </xs:schema>
