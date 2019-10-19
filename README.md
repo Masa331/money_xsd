@@ -3,3 +3,9 @@
 This repository contains Money XSD schemas
 
 Schemas were copied from Money S3 desktop installation and normalized. They aren't on-line anywhere.
+
+## Changelog
+
+### 19.10.2019
+
+* Copied newer schemas frmo Money S3 version 19.603
