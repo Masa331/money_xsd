@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MoneyData ICAgendy="12345678" description="faktury přijaté a vydané" ExpDate="2019-10-27" ExpTime="10:20:00">
+  <SeznamFaktVyd>
+    <FaktVyd>
+      <Doklad>1019006</Doklad>
+      <Popis>Prodej zboží - Brusle lední</Popis>
+      <Vystaveno>2019-10-22</Vystaveno>
+      <DatUcPr>2019-10-22</DatUcPr> <!-- Kdy se ma zauctovat do ucetniho deniku -->
+      <PlnenoDPH>2019-10-22</PlnenoDPH> <!-- DUZP -->
+      <Splatno>2019-11-05</Splatno>
+      <KonstSym>0008</KonstSym>
+      <VarSymbol>1019007</VarSymbol>
+      <Druh>N</Druh> <!-- N = normalni faktura -->
+      <Uhrada>převodem</Uhrada>
+      <ZpVypDPH>1</ZpVypDPH> <!-- zpusob vyopctu DPH. 1 = matematicky, 2 = koeficientem -->
+      <SouhrnDPH>
+        <Zaklad0>0</Zaklad0> <!-- zaklad s nulovou sazbou DPH  -->
+        <Zaklad5>0</Zaklad5> <!-- zaklad se snizenou sazbou DPH -->
+        <Zaklad22>1471.07</Zaklad22> <!-- zaklda se zakladni sazbou DPH -->
+        <DPH5>0</DPH5> <!-- DPH ve snizene sazbe -->
+        <DPH22>308.93</DPH22> <!-- DPH v zakladni sazbe -->
+      </SouhrnDPH>
+      <Celkem>1780</Celkem>
+      <DodOdb>
+        <ICO>454545451</ICO>
+        <DIC>CZ454545451</DIC>
+        <Nazev>Outdoor Sport s.r.o.</Nazev>
+        <Adresa>
+          <Ulice>Nám. Sv. Martina 12</Ulice>
+          <Misto>Praha</Misto>
+          <PSC>15700</PSC>
+          <Stat>Česká republika</Stat>
+        </Adresa>
+        <Tel>
+          <Pred>047</Pred>
+          <Cislo>285121121</Cislo>
+        </Tel>
+        <EMail>info@firma.cz</EMail>
+        <WWW>www.money.cz</WWW>
+        <PlatceDPH>0</PlatceDPH>
+        <FyzOsoba>0</FyzOsoba>
+      </DodOdb>
+      <SeznamPolozek>
+        <Polozka>
+          <Popis>Brusle lední</Popis>
+          <PocetMJ>2</PocetMJ>
+          <SazbaDPH>21</SazbaDPH>
+          <Cena>890</Cena>
+          <CenaTyp>1</CenaTyp> <!-- zda je jiz v cene zapocitano DPH nebo ne. Hodnoty viz. schema -->
+          <CenaPoSleve>1</CenaPoSleve>
+        </Polozka>
+      </SeznamPolozek>
+    </FaktVyd>
+  </SeznamFaktVyd>
+  <SeznamFaktVyd_DPP/>
+</MoneyData>

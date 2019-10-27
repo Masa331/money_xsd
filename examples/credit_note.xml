@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MoneyData ICAgendy="12345678" description="faktury přijaté a vydané" ExpDate="2019-10-27" ExpTime="10:20:00">
+  <SeznamFaktVyd>
+    <FaktVyd>
+      <Doklad>1019022</Doklad>
+      <Popis>*** Dobropis faktury 1019006 *** " Prodej zboží - </Popis>
+      <Vystaveno>2019-10-27</Vystaveno>
+      <DatUcPr>2019-10-27</DatUcPr>
+      <PlnenoDPH>2019-10-27</PlnenoDPH>
+      <Splatno>2019-11-10</Splatno>
+      <DobrDUZP>2019-10-22</DobrDUZP>
+      <KonstSym>0008</KonstSym>
+      <VarSymbol>1019001</VarSymbol>
+      <Druh>N</Druh>
+      <Dobropis>1</Dobropis> <!-- priznak, ze jde o dobropis -->
+      <Uhrada>převodem</Uhrada>
+      <ZpVypDPH>1</ZpVypDPH>
+      <SouhrnDPH>
+        <Zaklad0>0</Zaklad0>
+        <Zaklad5>0</Zaklad5>
+        <Zaklad22>-1471.07</Zaklad22>
+        <DPH5>0</DPH5>
+        <DPH22>-308.93</DPH22>
+      </SouhrnDPH>
+      <Celkem>-1780</Celkem>
+      <DodOdb>
+        <ICO>454545451</ICO>
+        <DIC>CZ454545451</DIC>
+        <Nazev>Outdoor Sport s.r.o.</Nazev>
+        <Adresa>
+          <Ulice>Nám. Sv. Martina 12</Ulice>
+          <Misto>Praha</Misto>
+          <PSC>15700</PSC>
+          <Stat>Česká republika</Stat>
+        </Adresa>
+        <Tel>
+          <Pred>047</Pred>
+          <Cislo>285121121</Cislo>
+        </Tel>
+        <EMail>info@firma.cz</EMail>
+        <WWW>www.money.cz</WWW>
+        <PlatceDPH>0</PlatceDPH>
+        <FyzOsoba>0</FyzOsoba>
+      </DodOdb>
+      <SeznamPolozek>
+        <Polozka>
+          <Popis>Brusle lední</Popis>
+          <PocetMJ>2</PocetMJ>
+          <SazbaDPH>21</SazbaDPH>
+          <Cena>-890</Cena>
+          <CenaTyp>1</CenaTyp>
+          <CenaPoSleve>1</CenaPoSleve>
+        </Polozka>
+      </SeznamPolozek>
+    </FaktVyd>
+  </SeznamFaktVyd>
+  <SeznamFaktVyd_DPP/>
+</MoneyData>

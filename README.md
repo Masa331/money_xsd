@@ -1,10 +1,10 @@
 # Money XSD
 
-This repository contains Money XSD schemas
+This repository contains Money XML schemas and some basic XML examples.
 
-Schemas were copied from Money S3 desktop installation and normalized. They aren't on-line anywhere.
+Schemas in `schemas/` dir were copied from Money S3 desktop installation and normalized(only indentation fixes).
 
-Normalization means only indentation fix now.
+Examples in `examples/` are custom made by me.
 
 ## Changelog
 
