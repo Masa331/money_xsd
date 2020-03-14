@@ -1,30 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<MoneyData ICAgendy="12345678" description="faktury přijaté a vydané" ExpDate="2019-10-27" ExpTime="10:20:00">
+<!-- Priklad normalni faktury. Ne vsechna pole zde jsou povinna -->
+<MoneyData ICAgendy="12345678" description="faktury přijaté a vydané" ExpDate="2020-02-05" ExpTime="10:20:00">
   <SeznamFaktVyd>
     <FaktVyd>
-      <Doklad>1019006</Doklad>
+      <Doklad>1019006</Doklad> <!-- Musi byt unikatni. Resp. pokud by importovane cislo v Money jiz existovalo tak se cela faktura preskoci -->
+      <EvCisDokl>1019006</EvCisDokl> <!-- Evidencni cislo dokladu pro kontrolni hlaseni DPH -->
       <Popis>Prodej zboží - Brusle lední</Popis>
-      <Vystaveno>2019-10-22</Vystaveno>
-      <DatUcPr>2019-10-22</DatUcPr> <!-- Kdy se ma zauctovat do ucetniho deniku -->
-      <PlnenoDPH>2019-10-22</PlnenoDPH> <!-- DUZP -->
-      <Splatno>2019-11-05</Splatno>
+      <Vystaveno>2020-01-22</Vystaveno>
+      <DatUcPr>2020-01-22</DatUcPr> <!-- Kdy se ma zauctovat do ucetniho deniku -->
+      <PlnenoDPH>2020-01-22</PlnenoDPH> <!-- DUZP -->
+      <Splatno>2020-02-05</Splatno>
       <KonstSym>0008</KonstSym>
       <VarSymbol>1019007</VarSymbol>
-      <Druh>N</Druh> <!-- N = normalni faktura -->
-      <Uhrada>převodem</Uhrada>
-      <ZpVypDPH>1</ZpVypDPH> <!-- zpusob vyopctu DPH. 1 = matematicky, 2 = koeficientem -->
+      <Druh>N</Druh> <!-- N = normalni faktura, dalsi moznosti viz. schema  -->
+      <Uhrada>převodem</Uhrada> <!-- Hodnoty mohou byt jakekoliv, nemaji vliv na funkci. Ale v Money jsou vychozi nasledujici a hodi se jich drzet(vc. diakritiky): "hotově", "složenkou", "dobírkou", "plat. kart.", "inkasem", "zápočtem" -->
+      <Ucet>BAN</Ucet> <!-- Na ktery bankovni ucet ma byt hrazeno. Zkratky dle nastaveni v konkretni Money databazi -->
+      <ZpVypDPH>1</ZpVypDPH> <!-- Zpusob vyopctu DPH. 1 = matematicky, 2 = koeficientem -->
       <SouhrnDPH>
-        <Zaklad0>0</Zaklad0> <!-- zaklad s nulovou sazbou DPH  -->
-        <Zaklad5>0</Zaklad5> <!-- zaklad se snizenou sazbou DPH -->
-        <Zaklad22>1471.07</Zaklad22> <!-- zaklda se zakladni sazbou DPH -->
+        <Zaklad0>0</Zaklad0> <!-- Zaklad s nulovou sazbou DPH  -->
+        <Zaklad5>0</Zaklad5> <!-- Zaklad se snizenou sazbou DPH -->
+        <Zaklad22>1471.07</Zaklad22> <!-- Zaklad se zakladni sazbou DPH -->
         <DPH5>0</DPH5> <!-- DPH ve snizene sazbe -->
         <DPH22>308.93</DPH22> <!-- DPH v zakladni sazbe -->
       </SouhrnDPH>
       <Celkem>1780</Celkem>
+      <PredKontac>FV001</PredKontac> <!-- Udava, jak se faktura zauctuje. Obsahuje zkratku predkontace dle nastaveni v Money databazi. Muze se tedy lisit -->
+      <KodDPH>19Ř01,02</KodDPH> <!-- Udava, jak se zauctuje DPH. Obsahuje zkratku cleneni dle nastaveni v Money databazi. Muze se tedy lisit -->
       <DodOdb>
         <ICO>454545451</ICO>
         <DIC>CZ454545451</DIC>
         <Nazev>Outdoor Sport s.r.o.</Nazev>
+        <FaktNazev>Outdoor Sport s.r.o.</FaktNazev> <!-- Tento udaj se mimo jine zobrazuje pri parovani plateb s bankou, hodi se tedy mit nastaveno i kdyz je stejny jako Nazev -->
         <Adresa>
           <Ulice>Nám. Sv. Martina 12</Ulice>
           <Misto>Praha</Misto>
@@ -37,17 +43,16 @@
         </Tel>
         <EMail>info@firma.cz</EMail>
         <WWW>www.money.cz</WWW>
-        <PlatceDPH>0</PlatceDPH>
-        <FyzOsoba>0</FyzOsoba>
       </DodOdb>
       <SeznamPolozek>
         <Polozka>
           <Popis>Brusle lední</Popis>
           <PocetMJ>2</PocetMJ>
           <SazbaDPH>21</SazbaDPH>
-          <Cena>890</Cena>
-          <CenaTyp>1</CenaTyp> <!-- zda je jiz v cene zapocitano DPH nebo ne. Hodnoty viz. schema -->
-          <CenaPoSleve>1</CenaPoSleve>
+          <Cena>890</Cena>  <!-- Cena dohromady za vsechny kusy -->
+          <CenaTyp>1</CenaTyp> <!-- Zda je jiz v cene zapocitano DPH nebo ne. Hodnoty viz. schema -->
+          <PredKontac>FV002</PredKontac> <!-- Da se nastavit pokud by se lisilo od nastaveni pro celou fakturu -->
+          <KodDPH>19Ř20</KodDPH> <!-- Da se nastavit pokud by se lisilo od nastaveni pro celou fakturu -->
         </Polozka>
       </SeznamPolozek>
     </FaktVyd>

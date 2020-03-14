@@ -8,6 +8,10 @@ Examples in `examples/` are custom made by me.
 
 ## Changelog
 
+### 14.03.2020
+
+* Copied newer schemas from Money S3 version 20.201
+
 ### 19.10.2019
 
-* Copied newer schemas frmo Money S3 version 19.603
+* Copied newer schemas from Money S3 version 19.603

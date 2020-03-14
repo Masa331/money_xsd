@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- Priklad dobropisu. Chova se vetsinou podobne jako normalni faktura -->
 <MoneyData ICAgendy="12345678" description="faktury přijaté a vydané" ExpDate="2019-10-27" ExpTime="10:20:00">
   <SeznamFaktVyd>
     <FaktVyd>
@@ -12,17 +13,17 @@
       <KonstSym>0008</KonstSym>
       <VarSymbol>1019001</VarSymbol>
       <Druh>N</Druh>
-      <Dobropis>1</Dobropis> <!-- priznak, ze jde o dobropis -->
+      <Dobropis>1</Dobropis> <!-- Priznak udavajici, ze jde o dobropis. Druh faktury musi byt v tomto pripade stale "N" -->
       <Uhrada>převodem</Uhrada>
       <ZpVypDPH>1</ZpVypDPH>
       <SouhrnDPH>
         <Zaklad0>0</Zaklad0>
         <Zaklad5>0</Zaklad5>
-        <Zaklad22>-1471.07</Zaklad22>
+        <Zaklad22>-1471.07</Zaklad22> <!-- Vsechny castky na dobropisu musi byt s minusem -->
         <DPH5>0</DPH5>
-        <DPH22>-308.93</DPH22>
+        <DPH22>-308.93</DPH22> <!-- Vsechny castky na dobropisu musi byt s minusem -->
       </SouhrnDPH>
-      <Celkem>-1780</Celkem>
+      <Celkem>-1780</Celkem> <!-- Vsechny castky na dobropisu musi byt s minusem -->
       <DodOdb>
         <ICO>454545451</ICO>
         <DIC>CZ454545451</DIC>
@@ -47,7 +48,7 @@
           <Popis>Brusle lední</Popis>
           <PocetMJ>2</PocetMJ>
           <SazbaDPH>21</SazbaDPH>
-          <Cena>-890</Cena>
+          <Cena>-890</Cena> <!-- Vsechny castky na dobropisu musi byt s minusem -->
           <CenaTyp>1</CenaTyp>
           <CenaPoSleve>1</CenaPoSleve>
         </Polozka>
