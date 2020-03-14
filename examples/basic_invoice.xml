@@ -16,7 +16,7 @@
       <Uhrada>převodem</Uhrada> <!-- Hodnoty mohou byt jakekoliv, nemaji vliv na funkci. Ale v Money jsou vychozi nasledujici a hodi se jich drzet(vc. diakritiky): "hotově", "složenkou", "dobírkou", "plat. kart.", "inkasem", "zápočtem" -->
       <Ucet>BAN</Ucet> <!-- Na ktery bankovni ucet ma byt hrazeno. Zkratky dle nastaveni v konkretni Money databazi -->
       <ZpVypDPH>1</ZpVypDPH> <!-- Zpusob vyopctu DPH. 1 = matematicky, 2 = koeficientem -->
-      <SouhrnDPH>
+      <SouhrnDPH> <!-- Pokud je tato struktura pritomna, ceny z polozek se pro celkovou cenu faktury ignoruji  -->
         <Zaklad0>0</Zaklad0> <!-- Zaklad s nulovou sazbou DPH  -->
         <Zaklad5>0</Zaklad5> <!-- Zaklad se snizenou sazbou DPH -->
         <Zaklad22>1471.07</Zaklad22> <!-- Zaklad se zakladni sazbou DPH -->
@@ -44,12 +44,12 @@
         <EMail>info@firma.cz</EMail>
         <WWW>www.money.cz</WWW>
       </DodOdb>
-      <SeznamPolozek>
+      <SeznamPolozek> <!-- Pokud neni nastaven SouhrnDPH tak se celkova cena urci souctem polozek -->
         <Polozka>
           <Popis>Brusle lední</Popis>
-          <PocetMJ>2</PocetMJ>
+          <PocetMJ>2</PocetMJ> <!-- Pocet kusu -->
           <SazbaDPH>21</SazbaDPH>
-          <Cena>890</Cena>  <!-- Cena dohromady za vsechny kusy -->
+          <Cena>890</Cena> <!-- Cena za jeden kus -->
           <CenaTyp>1</CenaTyp> <!-- Zda je jiz v cene zapocitano DPH nebo ne. Hodnoty viz. schema -->
           <PredKontac>FV002</PredKontac> <!-- Da se nastavit pokud by se lisilo od nastaveni pro celou fakturu -->
           <KodDPH>19Ř20</KodDPH> <!-- Da se nastavit pokud by se lisilo od nastaveni pro celou fakturu -->
