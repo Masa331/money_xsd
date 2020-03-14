@@ -112,20 +112,20 @@
         <xs:annotation>
           <xs:documentation>Typ nepřítomnosti:
 
-            P = Plánovaná dovolená
-            D = Dovolená
-            G = Paragraf
-            V = Neplacené volno
-            A = Neomluvená absence
-            N = Nemoc
-            K = Karanténa
-            O = OČR
-            H = Dlouhodobé ošetřovné
-            M = Mateřská dovolená (PPM)
-            R = Další mateřská dovolená (RP)
-            F = Otcovská
-            J = Voj., civilní služba
-            E = Dny před nástupem</xs:documentation>
+P = Plánovaná dovolená
+D = Dovolená
+G = Paragraf
+V = Neplacené volno
+A = Neomluvená absence
+N = Nemoc
+K = Karanténa
+O = OČR
+H = Dlouhodobé ošetřovné
+M = Mateřská dovolená (PPM)
+R = Další mateřská dovolená (RP)
+F = Otcovská
+J = Voj., civilní služba
+E = Dny před nástupem</xs:documentation>
         </xs:annotation>
         <xs:simpleType>
           <xs:restriction base="xs:string">
@@ -151,7 +151,7 @@
         <xs:annotation>
           <xs:documentation>Začátek nepřítomnosti.
 
-            Poznámka: v elementu je možné uvést skutečný začátek nepřítomnosti, který může spadat do jiného období, než je období zpracování mzdy. Pokud je při importu této nepřítomnosti nalezena časově předcházející nepřítomnost, tak se automaticky zaškrtne přepínač "Pokračování minulé nepřítomnosti".</xs:documentation>
+Poznámka: v elementu je možné uvést skutečný začátek nepřítomnosti, který může spadat do jiného období, než je období zpracování mzdy. Pokud je při importu této nepřítomnosti nalezena časově předcházející nepřítomnost, tak se automaticky zaškrtne přepínač "Pokračování minulé nepřítomnosti".</xs:documentation>
         </xs:annotation>
         <xs:simpleType>
           <xs:restriction base="xs:date"/>
@@ -161,7 +161,7 @@
         <xs:annotation>
           <xs:documentation>Konec nepřítomnosti
 
-            Poznámka: pokud není známý konec nepřítomnost (např. nepřítomnost stále pokračuje), tak je možné element vynechat. Program automaticky dosadí poslední den v měsíci.</xs:documentation>
+Poznámka: pokud není známý konec nepřítomnost (např. nepřítomnost stále pokračuje), tak je možné element vynechat. Program automaticky dosadí poslední den v měsíci.</xs:documentation>
         </xs:annotation>
         <xs:simpleType>
           <xs:restriction base="xs:date"/>
@@ -171,7 +171,7 @@
         <xs:annotation>
           <xs:documentation>Datum porodu u mateřské dovolené (PPM)
 
-            Element se prozatím neexportuje ani neimportuje.</xs:documentation>
+Element se prozatím neexportuje ani neimportuje.</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element name="OdpHodZ" type="cisloType" minOccurs="0">
@@ -213,30 +213,30 @@
         <xs:annotation>
           <xs:documentation>Element určuje, zda je nepřítomnost pokračováním časově předcházející nepřítomnosti téhož typu.
 
-            Element se prozatím neexportuje ani neimportuje.</xs:documentation>
+Element se prozatím neexportuje ani neimportuje.</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element name="NahrMzdy" type="xs:boolean" minOccurs="0">
         <xs:annotation>
           <xs:documentation>Element určuje, zda se bude pro nepřítomnost počítat náhrada mzdy za nemoc (karanténu).
 
-            Element se prozatím neexportuje ani neimportuje.</xs:documentation>
+Element se prozatím neexportuje ani neimportuje.</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element name="PrepocDny" type="xs:boolean" minOccurs="0">
         <xs:annotation>
           <xs:documentation>Element určuje, zda se u nepřítomnosti typu "dovolená" přepočítává Fond pracovních dnů z Fondu pracovních hodin a Počet dnů svátků z Počtu pracovních hodin ve svátcích.
 
-            Poznámka k importu: pokud jsou na vstupu uvedeny dny i hodiny a element nabývá hodnoty 0, tak se tyto údaje převezmou ze vstupního souboru. Pokud je element roven hodnotě 1, tak program vypočítá dny na základě hodin a ignoruje dny na vstupu. V současném stavu je přepínač na dovolené vždy odkšrtnutý.
+Poznámka k importu: pokud jsou na vstupu uvedeny dny i hodiny a element nabývá hodnoty 0, tak se tyto údaje převezmou ze vstupního souboru. Pokud je element roven hodnotě 1, tak program vypočítá dny na základě hodin a ignoruje dny na vstupu. V současném stavu je přepínač na dovolené vždy odkšrtnutý.
 
-            Element se prozatím neexportuje ani neimportuje.</xs:documentation>
+Element se prozatím neexportuje ani neimportuje.</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element name="Pozn" type="xs:string" minOccurs="0">
         <xs:annotation>
           <xs:documentation>Poznámka
 
-            Element se prozatím neexportuje ani neimportuje.</xs:documentation>
+Element se prozatím neexportuje ani neimportuje.</xs:documentation>
         </xs:annotation>
       </xs:element>
     </xs:all>

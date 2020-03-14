@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--  Schéma popisuje strukturu XML dokumentu určeného pro import dat z docházkového systému do programu Money.
-Autor: Marek Vykydal
+      Autor: Marek Vykydal
 -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
   <xs:annotation>
@@ -16,7 +16,7 @@ Autor: Marek Vykydal
           <xs:annotation>
             <xs:documentation>Období zpracování mzdy
 
-              Poznámka: v jedné dávce může být pouze jedno období</xs:documentation>
+Poznámka: v jedné dávce může být pouze jedno období</xs:documentation>
           </xs:annotation>
           <xs:complexType>
             <xs:all>
@@ -94,7 +94,7 @@ Autor: Marek Vykydal
         <xs:annotation>
           <xs:documentation>Pracovní fond (bez svátků připadajících na pracovní den)
 
-            Poznámka: v některých docházkových systémech se pracovní fond volitelně neeviduje, proto je element nepovinný.</xs:documentation>
+Poznámka: v některých docházkových systémech se pracovní fond volitelně neeviduje, proto je element nepovinný.</xs:documentation>
         </xs:annotation>
         <xs:complexType>
           <xs:all>
@@ -199,17 +199,17 @@ Autor: Marek Vykydal
         <xs:annotation>
           <xs:documentation>Typ nepřítomnosti:
 
-            0 = Dovolená
-            1 = Paragraf
-            2 = Neplacené volno
-            3 = Neomluvená absence
-            4 = Nemoc (včetně úrazu) 
-            5 = Karanténa
-            6 = OČR (ošetřování člena rodiny)
-            7 = Mateřská dovolená
-            8 = Další mateřská dovolená
-            9 = Otcovská
-            10 = Dlouhodobé ošetřovné</xs:documentation>
+0 = Dovolená
+1 = Paragraf
+2 = Neplacené volno
+3 = Neomluvená absence
+4 = Nemoc (včetně úrazu) 
+5 = Karanténa
+6 = OČR (ošetřování člena rodiny)
+7 = Mateřská dovolená
+8 = Další mateřská dovolená
+9 = Otcovská
+10 = Dlouhodobé ošetřovné</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element name="Zacatek" type="nepritomnostObdobi">

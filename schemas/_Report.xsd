@@ -37,7 +37,7 @@
         <xs:annotation>
           <xs:documentation>Výsledek zpracování dané entity.
 
-            WarningError = chyba nastala u některé  podřízené entity, záleží na kontextu. Např. u Firmy nastane WarningError, pokud výsledek zpracování některé podřízené Osoby je FatalError.</xs:documentation>
+WarningError = chyba nastala u některé  podřízené entity, záleží na kontextu. Např. u Firmy nastane WarningError, pokud výsledek zpracování některé podřízené Osoby je FatalError.</xs:documentation>
         </xs:annotation>
         <xs:simpleType>
           <xs:restriction base="xs:string">
@@ -70,7 +70,7 @@
         <xs:annotation>
           <xs:documentation>Výsledek zpracování dané entity.
 
-            WarningError = chyba nastala u některé  podřízené entity, záleží na kontextu. Např. u Firmy nastane WarningError, pokud výsledek zpracování některé podřízené Osoby je FatalError.</xs:documentation>
+WarningError = chyba nastala u některé  podřízené entity, záleží na kontextu. Např. u Firmy nastane WarningError, pokud výsledek zpracování některé podřízené Osoby je FatalError.</xs:documentation>
         </xs:annotation>
         <xs:simpleType>
           <xs:restriction base="xs:string">
@@ -98,13 +98,13 @@
         <xs:annotation>
           <xs:documentation>Nastaví se podle toho, ve které fázi zpracování chyba nastala.
 
-            SystemError - chyba struktury XML dat, chyba datoveho typu atd.
+SystemError - chyba struktury XML dat, chyba datoveho typu atd.
 
-            CorrelationError - chyba na základě porovnání klíčů a konfigurace zpracování.
+CorrelationError - chyba na základě porovnání klíčů a konfigurace zpracování.
 
-            BusinessError - pokud program z nějakého důvodu odmítne záznam uložit.
+BusinessError - pokud program z nějakého důvodu odmítne záznam uložit.
 
-            PayloadError - odmítnutí  příjmu záznamu, který je formálně v pořádku, z nějakého obchodního důvodu.</xs:documentation>
+PayloadError - odmítnutí  příjmu záznamu, který je formálně v pořádku, z nějakého obchodního důvodu.</xs:documentation>
         </xs:annotation>
         <xs:simpleType>
           <xs:restriction base="xs:string">

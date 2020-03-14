@@ -121,8 +121,8 @@
       <xs:element name="Dokumenty" minOccurs="0">
         <xs:annotation>
           <xs:documentation>Seznam připojených dokumentů
-            IMPORT: ANO
-            EXPORT: NE</xs:documentation>
+IMPORT: ANO
+EXPORT: NE</xs:documentation>
         </xs:annotation>
         <xs:complexType>
           <xs:sequence>

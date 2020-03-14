@@ -123,7 +123,7 @@
               <xs:annotation>
                 <xs:documentation>Kód činnosti
 
-                  Poznámka: prvním znakem v ködu činnosti je Druh činnosti</xs:documentation>
+Poznámka: prvním znakem v ködu činnosti je Druh činnosti</xs:documentation>
               </xs:annotation>
               <xs:simpleType>
                 <xs:restriction base="xs:string">

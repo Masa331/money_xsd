@@ -83,7 +83,7 @@
         <xs:element name="SeznamUcOsnov" minOccurs="0">
           <xs:annotation>
             <xs:documentation>Seznam účtů účetní osnovy
-              (podvojné účetnictví)</xs:documentation>
+(podvojné účetnictví)</xs:documentation>
           </xs:annotation>
           <xs:complexType>
             <xs:complexContent>
@@ -98,7 +98,7 @@
         <xs:element name="SeznamUcPohybu" minOccurs="0">
           <xs:annotation>
             <xs:documentation>Seznam účetních pohybů
-              (daňová evidence)</xs:documentation>
+(daňová evidence)</xs:documentation>
           </xs:annotation>
           <xs:complexType>
             <xs:sequence>
@@ -109,7 +109,7 @@
         <xs:element name="SeznamZauctovaniDPH" minOccurs="0">
           <xs:annotation>
             <xs:documentation>Seznam zaúčtování DPH
-              (podvojné účetnictví)</xs:documentation>
+(podvojné účetnictví)</xs:documentation>
           </xs:annotation>
           <xs:complexType>
             <xs:sequence>
@@ -120,7 +120,7 @@
         <xs:element name="SeznamZauctovaniDPH_DE" minOccurs="0">
           <xs:annotation>
             <xs:documentation>Seznam zaúčtování DPH
-              (daňová evidence)</xs:documentation>
+(daňová evidence)</xs:documentation>
           </xs:annotation>
           <xs:complexType>
             <xs:sequence>
@@ -131,7 +131,7 @@
         <xs:element name="SeznamPredkontaci" minOccurs="0">
           <xs:annotation>
             <xs:documentation>Seznam předkontací
-              (podvojné účetnictví)</xs:documentation>
+(podvojné účetnictví)</xs:documentation>
           </xs:annotation>
           <xs:complexType>
             <xs:complexContent>
@@ -152,7 +152,7 @@
         <xs:element name="SeznamPredkontaciDE" minOccurs="0">
           <xs:annotation>
             <xs:documentation>Seznam předkontací
-              (daňová evidence)</xs:documentation>
+(daňová evidence)</xs:documentation>
           </xs:annotation>
           <xs:complexType>
             <xs:complexContent>
@@ -167,7 +167,7 @@
         <xs:element name="SeznamKurzListku" minOccurs="0">
           <xs:annotation>
             <xs:documentation>Seznam kurzovních lístků
-              (pouze pro interní potřebu)</xs:documentation>
+(pouze pro interní potřebu)</xs:documentation>
           </xs:annotation>
           <xs:complexType>
             <xs:complexContent>
@@ -230,9 +230,9 @@
         <xs:element name="SeznamTypuPriplatku" minOccurs="0">
           <xs:annotation>
             <xs:documentation>Seznam typů příplatků
-              (pouze pro interní potřebu - docházkové systémy)
+(pouze pro interní potřebu - docházkové systémy)
 
-              Entita se samostatně neexportuje ani neimportuje</xs:documentation>
+Entita se samostatně neexportuje ani neimportuje</xs:documentation>
           </xs:annotation>
           <xs:complexType>
             <xs:sequence>
@@ -244,7 +244,7 @@
           <xs:annotation>
             <xs:documentation>Seznam cenových hladin
 
-              Entita se samostatně neexportuje ani neimportuje</xs:documentation>
+Entita se samostatně neexportuje ani neimportuje</xs:documentation>
           </xs:annotation>
           <xs:complexType>
             <xs:complexContent>
@@ -325,8 +325,7 @@
         <xs:element name="SeznamSkladu" minOccurs="0">
           <xs:annotation>
             <xs:documentation>Seznam skladů
-
-              Entita se samostatně neexportuje ani neimportuje</xs:documentation>
+(pouze export)</xs:documentation>
           </xs:annotation>
           <xs:complexType>
             <xs:complexContent>
@@ -347,7 +346,7 @@
         <xs:element name="SeznamZamestnancu" minOccurs="0">
           <xs:annotation>
             <xs:documentation>Seznam zaměstnanců
-              (pouze pro interní potřebu - docházkové systémy)</xs:documentation>
+(pouze pro interní potřebu - docházkové systémy)</xs:documentation>
           </xs:annotation>
           <xs:complexType>
             <xs:complexContent>
@@ -796,7 +795,7 @@
         <xs:element name="SeznamMezd" minOccurs="0">
           <xs:annotation>
             <xs:documentation>Seznam mezd
-              (pouze pro interní potřebu - docházkové systémy)</xs:documentation>
+(pouze pro interní potřebu - docházkové systémy)</xs:documentation>
           </xs:annotation>
           <xs:complexType>
             <xs:complexContent>
@@ -857,13 +856,13 @@
       <xs:attribute name="VyberZaznamu" use="optional">
         <xs:annotation>
           <xs:appinfo source="XML export - způsob exportu">Způsob exportu (výběr záznamu):
-            0 = exportují se všechny záznamy
-            3 = dosud neexportované a změněné záznamy
-            4 = nové a změněné záznamy od data poslední dávky</xs:appinfo>
+0 = exportují se všechny záznamy
+3 = dosud neexportované a změněné záznamy
+4 = nové a změněné záznamy od data poslední dávky</xs:appinfo>
           <xs:documentation>Výběr záznamu při exportu:
-            0 = všechny
-            3 = dosud neexportované a změněné
-            4 = nové a změněné od data poslední dávky</xs:documentation>
+0 = všechny
+3 = dosud neexportované a změněné
+4 = nové a změněné od data poslední dávky</xs:documentation>
         </xs:annotation>
         <xs:simpleType>
           <xs:restriction base="xs:string">
@@ -877,9 +876,9 @@
       <xs:attribute name="GUID" use="optional">
         <xs:annotation>
           <xs:appinfo source="XML export - způsob exportu">Způsob exportu (výběr záznamu):
-            0 = exportují se všechny záznamy
-            3 = dosud neexportované a změněné záznamy
-            4 = nové a změněné záznamy od data poslední dávky</xs:appinfo>
+0 = exportují se všechny záznamy
+3 = dosud neexportované a změněné záznamy
+4 = nové a změněné záznamy od data poslední dávky</xs:appinfo>
           <xs:documentation>GUID</xs:documentation>
         </xs:annotation>
       </xs:attribute>

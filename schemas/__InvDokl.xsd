@@ -7,14 +7,14 @@
       <xs:element name="CisloD" type="xs:integer">
         <xs:annotation>
           <xs:documentation>Číslo dokladu v rámci inventury
-            Import: ANO, Export: ANO</xs:documentation>
+Import: ANO, Export: ANO</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element name="InvID" type="xs:integer">
         <xs:annotation>
           <xs:documentation>"Číslo řádku" inventury,
-            společně s CisloD jednoznačný identifikátor
-            Import: ANO, Export: ANO</xs:documentation>
+společně s CisloD jednoznačný identifikátor
+Import: ANO, Export: ANO</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element name="Popis" minOccurs="0">

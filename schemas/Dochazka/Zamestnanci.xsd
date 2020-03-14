@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--  Schéma popisuje strukturu XML dokumentu určeného pro export zaměstnanců z programu Money do docházkového systému.
-Autor: Marek Vykydal
+      Autor: Marek Vykydal
 -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
   <xs:annotation>
@@ -80,8 +80,8 @@ Autor: Marek Vykydal
       <xs:attribute name="VyberZaznamu" use="optional">
         <xs:annotation>
           <xs:appinfo>Způsob exportu:
-            (0 = exportují se všechny záznamy nebo pouze vybrané, 
-            4 = nové a změněné od data a času poslední dávky)</xs:appinfo>
+ (0 = exportují se všechny záznamy nebo pouze vybrané, 
+4 = nové a změněné od data a času poslední dávky)</xs:appinfo>
         </xs:annotation>
         <xs:simpleType>
           <xs:restriction base="xs:string">
@@ -156,7 +156,7 @@ Autor: Marek Vykydal
               <xs:annotation>
                 <xs:documentation>Kód činnosti
 
-                  Poznámka: prvním znakem v ködu činnosti je Druh činnosti</xs:documentation>
+Poznámka: prvním znakem v ködu činnosti je Druh činnosti</xs:documentation>
               </xs:annotation>
               <xs:simpleType>
                 <xs:restriction base="xs:string">
