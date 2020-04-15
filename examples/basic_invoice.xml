@@ -3,11 +3,11 @@
 <MoneyData ICAgendy="12345678" description="faktury přijaté a vydané" ExpDate="2020-02-05" ExpTime="10:20:00">
   <SeznamFaktVyd>
     <FaktVyd>
-      <Doklad>1019006</Doklad> <!-- Musi byt unikatni. Resp. pokud by importovane cislo v Money jiz existovalo tak se cela faktura preskoci -->
-      <EvCisDokl>1019006</EvCisDokl> <!-- Evidencni cislo dokladu pro kontrolni hlaseni DPH -->
+      <Doklad>1019006</Doklad> <!-- Musi byt unikatni. Resp. pokud by importovane cislo v Money jiz existovalo tak se cela faktura preskoci. Max 10 znaku. -->
+      <EvCisDokl>1019006</EvCisDokl> <!-- Evidencni cislo dokladu pro kontrolni hlaseni DPH. Vetsinou stejne jako <Doklad>. -->
       <Popis>Prodej zboží - Brusle lední</Popis>
       <Vystaveno>2020-01-22</Vystaveno>
-      <DatUcPr>2020-01-22</DatUcPr> <!-- Kdy se ma zauctovat do ucetniho deniku -->
+      <DatUcPr>2020-01-22</DatUcPr> <!-- Kdy se ma zauctovat do ucetniho deniku. Vetsinou stejne jako DUZP. -->
       <PlnenoDPH>2020-01-22</PlnenoDPH> <!-- DUZP -->
       <Splatno>2020-02-05</Splatno>
       <KonstSym>0008</KonstSym>
@@ -24,8 +24,8 @@
         <DPH22>308.93</DPH22> <!-- DPH v zakladni sazbe -->
       </SouhrnDPH>
       <Celkem>1780</Celkem>
-      <PredKontac>FV001</PredKontac> <!-- Udava, jak se faktura zauctuje. Obsahuje zkratku predkontace dle nastaveni v Money databazi. Muze se tedy lisit -->
-      <KodDPH>19Ř01,02</KodDPH> <!-- Udava, jak se zauctuje DPH. Obsahuje zkratku cleneni dle nastaveni v Money databazi. Muze se tedy lisit -->
+      <PredKontac>FV001</PredKontac> <!-- Udava, jak se faktura zauctuje. Obsahuje zkratku predkontace dle nastaveni v Money databazi. Muze se tedy lisit v kazdem Money -->
+      <KodDPH>19Ř01,02</KodDPH> <!-- Udava, jak se zauctuje DPH. Obsahuje zkratku cleneni dle nastaveni v Money databazi. Muze se tedy lisit v kazdem Money -->
       <DodOdb>
         <ICO>454545451</ICO>
         <DIC>CZ454545451</DIC>
