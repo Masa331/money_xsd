@@ -27,13 +27,13 @@
       <DodOdb>
         <ICO>454545451</ICO>
         <DIC>CZ454545451</DIC>
-        <Nazev>Outdoor Sport s.r.o.</Nazev>
-        <Adresa>
+        <ObchNazev>Outdoor Sport s.r.o.</ObchNazev>
+        <ObchAdresa>
           <Ulice>Nám. Sv. Martina 12</Ulice>
           <Misto>Praha</Misto>
           <PSC>15700</PSC>
           <Stat>Česká republika</Stat>
-        </Adresa>
+        </ObchAdresa>
         <Tel>
           <Pred>047</Pred>
           <Cislo>285121121</Cislo>
